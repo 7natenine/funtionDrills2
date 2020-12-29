@@ -118,7 +118,7 @@ function rockPaperScissors(play){
   return result
 }
 
-console.log(rockPaperScissors(1))
-console.log(rockPaperScissors(2))
-console.log(rockPaperScissors(3))
-console.log(rockPaperScissors(4))
+// console.log(rockPaperScissors(1))
+// console.log(rockPaperScissors(2))
+// console.log(rockPaperScissors(3))
+// console.log(rockPaperScissors(4))
