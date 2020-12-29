@@ -80,7 +80,45 @@ switch(month){
  return `${month} has ${numDays} days`
 }
 
-console.log(daysInMonth('january',false))
-console.log(daysInMonth('february',true))
-console.log(daysInMonth('February',false))
-console.log(daysInMonth('Februry',true))
+// console.log(daysInMonth('january',false))
+// console.log(daysInMonth('february',true))
+// console.log(daysInMonth('February',false))
+// console.log(daysInMonth('Februry',true))
+
+function rockPaperScissors(play){
+  const computer = Math.floor(Math.random() * 3) + 1;
+
+  let result = '';
+
+  if (play > 3 ||  play < 1){
+    result = 'error';
+  }
+  if (play === computer){
+    result = 'tie';
+  }
+  else if(play === 1 && computer === 2){
+    result = "computer wins!"
+  }
+  else if(play === 2 && computer === 3){
+    result = "computer wins!"
+  }
+  else if(play === 3 && computer === 1){
+    result = "computer wins!"
+  }
+  else if(play === 1 && computer === 3){
+    result = "you win!"
+  }
+  else if(play === 2 && computer === 1){
+    result = "you win!"
+  }
+  else if(play === 3 && computer === 2){
+    result = "you win!"
+  }
+
+  return result
+}
+
+console.log(rockPaperScissors(1))
+console.log(rockPaperScissors(2))
+console.log(rockPaperScissors(3))
+console.log(rockPaperScissors(4))
